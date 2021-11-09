@@ -5,43 +5,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reuben's Calculator</title>
-  <link rel="stylesheet" href="assets/scripts/styles.css">
+  
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="calculator">
+  <main class="main-section">
 
-    <!-- will show the current operation here -->
-    <div class="calculator__operations-output">&nbsp;</div>
+    <div class="calculator">
+      <!-- will show the current operation here -->
+      <div class="calculator__operations-output">&nbsp;</div>
 
-    <!-- will show the output -->
-    <div class="calculator__output">&nbsp;</div>
+      <!-- will show the output -->
+      <div class="calculator__output">&nbsp;</div>
 
-    <!-- all the pressable keys -->
-    <button class="calculator__ac">AC</button>
-    <button class="calculator__sign">&plusmn;</button>
-    <button class="calculator__percent">&percnt;</button>
-    <button class="calculator__divide">&divide;</button>
+      <!-- all the pressable keys -->
+      <button class="calculator__ac sub-function">AC</button>
+      <button class="calculator__sign sub-function">&plusmn;</button>
+      <button class="calculator__percent sub-function">&percnt;</button>
+      <button class="calculator__divide main-function">&divide;</button>
 
-    <button class="calculator__7">7</button>
-    <button class="calculator__8">8</button>
-    <button class="calculator__9">9</button>
-    <button class="calculator__multiply">&times;</button>
+      <button class="calculator__7 number">7</button>
+      <button class="calculator__8 number">8</button>
+      <button class="calculator__9 number">9</button>
+      <button class="calculator__multiply main-function">&times;</button>
 
-    <button class="calculator__4">4</button>
-    <button class="calculator__5">5</button>
-    <button class="calculator__6">6</button>
-    <button class="calculator__minus">&minus;</button>
+      <button class="calculator__4 number">4</button>
+      <button class="calculator__5 number">5</button>
+      <button class="calculator__6 number">6</button>
+      <button class="calculator__minus main-function">&minus;</button>
 
-    <button class="calculator__1">1</button>
-    <button class="calculator__2">2</button>
-    <button class="calculator__3">3</button>
-    <button class="calculator__plus">&plus;</button>
+      <button class="calculator__1 number">1</button>
+      <button class="calculator__2 number">2</button>
+      <button class="calculator__3 number">3</button>
+      <button class="calculator__plus main-function">&plus;</button>
 
-    <button class="calculator__0">0</button>
-    <button class="calculator__decimal">&period;</button>
-    <button class="calculator__equal">&equals;</button>
-
+      <button class="calculator__0 number">0</button>
+      <button class="calculator__decimal number">&period;</button>
+      <button class="calculator__equal main-function">&equals;</button>
+    </div>
   
   </main>
+
+  <script src="main.js"></script>
 </body>
 </html>

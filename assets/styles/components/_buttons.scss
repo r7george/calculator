@@ -1,0 +1,25 @@
+@import "_variables.scss";
+
+button {
+  border-radius: 50%;
+  border: none;
+}
+
+.sub-function {
+  background-color: $quinaryColor;
+  color: $primaryColor;
+}
+
+.main-function {
+  background-color: $quaternaryColor;
+  color: $tertiaryColor;
+}
+
+.calculator__equal {
+  border-radius: 25px;
+}
+
+.number {
+  background-color: $secondaryColor;
+  color: $tertiaryColor;
+}
