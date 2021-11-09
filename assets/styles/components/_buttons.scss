@@ -5,21 +5,21 @@ button {
   border: none;
 }
 
-.sub-function {
+.calculator__keypad__sub-operator {
   background-color: $quinaryColor;
   color: $primaryColor;
 }
 
-.main-function {
+.calculator__keypad__main-operator {
   background-color: $quaternaryColor;
   color: $tertiaryColor;
 }
 
-.calculator__equal {
+#equals {
   border-radius: 25px;
 }
 
-.number {
+.calculator__keypad__number {
   background-color: $secondaryColor;
   color: $tertiaryColor;
 }

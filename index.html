@@ -12,40 +12,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="main-section">
+  <main>
 
     <div class="calculator">
       <!-- will show the current operation here -->
-      <div class="calculator__operations-output">&nbsp;</div>
+      <div class="calculator__operations-output">Type Input</div>
 
       <!-- will show the output -->
-      <div class="calculator__output">&nbsp;</div>
+      <div class="calculator__output">0</div>
 
-      <!-- all the pressable keys -->
-      <button class="calculator__ac sub-function">AC</button>
-      <button class="calculator__sign sub-function">&plusmn;</button>
-      <button class="calculator__percent sub-function">&percnt;</button>
-      <button class="calculator__divide main-function">&divide;</button>
+      
+      <div class="calculator__keypad">
 
-      <button class="calculator__7 number">7</button>
-      <button class="calculator__8 number">8</button>
-      <button class="calculator__9 number">9</button>
-      <button class="calculator__multiply main-function">&times;</button>
+        <!-- all the pressable keys -->
+        <button class="calculator__keypad__sub-operator" id="ac">AC</button>
+        <button class="calculator__keypad__sub-operator" id="plusMinus">&plusmn;</button>
+        <button class="calculator__keypad__sub-operator" id="percent" value="%">&percnt;</button>
+        <button class="calculator__keypad__main-operator" id="divide" value="/">&divide;</button>
 
-      <button class="calculator__4 number">4</button>
-      <button class="calculator__5 number">5</button>
-      <button class="calculator__6 number">6</button>
-      <button class="calculator__minus main-function">&minus;</button>
+        <button class="calculator__keypad__number" id="seven" value="7">7</button>
+        <button class="calculator__keypad__number" id="eight" value="8">8</button>
+        <button class="calculator__keypad__number" id="nine" value="9">9</button>
+        <button class="calculator__keypad__main-operator" id="times" value="*">&times;</button>
 
-      <button class="calculator__1 number">1</button>
-      <button class="calculator__2 number">2</button>
-      <button class="calculator__3 number">3</button>
-      <button class="calculator__plus main-function">&plus;</button>
+        <button class="calculator__keypad__number" id="four" value="4">4</button>
+        <button class="calculator__keypad__number" id="five" value="5">5</button>
+        <button class="calculator__keypad__number" id="six" value="6">6</button>
+        <button class="calculator__keypad__main-operator" id="minus" value="-">&minus;</button>
 
-      <button class="calculator__0 number">0</button>
-      <button class="calculator__decimal number">&period;</button>
-      <button class="calculator__equal main-function">&equals;</button>
+        <button class="calculator__keypad__number" id="one" value="1">1</button>
+        <button class="calculator__keypad__number" id="two" value="2">2</button>
+        <button class="calculator__keypad__number" id="three" value="3">3</button>
+        <button class="calculator__keypad__main-operator" id="plus" value="+">&plus;</button>
+
+        <button class="calculator__keypad__number" id="zero" value="0">0</button>
+        <button class="calculator__keypad__number" id="decimal" value=".">&period;</button>
+        <button class="calculator__keypad__main-operator" id="equals" value="=">&equals;</button>
+      </div>
     </div>
+    
   
   </main>
 
