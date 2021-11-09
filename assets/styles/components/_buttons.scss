@@ -10,7 +10,7 @@ button {
   color: $primaryColor;
 }
 
-.calculator__keypad__main-operator {
+.calculator__keypad__main-operator, .calculator__keypad__equals {
   background-color: $quaternaryColor;
   color: $tertiaryColor;
 }

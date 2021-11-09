@@ -8,7 +8,7 @@ button {
   color: #222831;
 }
 
-.calculator__keypad__main-operator {
+.calculator__keypad__main-operator, .calculator__keypad__equals {
   background-color: #00ADB5;
   color: #eeeeee;
 }
@@ -28,11 +28,11 @@ button {
   font-size: 1pc;
 }
 
-.calculator__operations-output {
+.calculator__operations-output > h3 {
   font-size: medium;
 }
 
-.calculator__output {
+.calculator__output > h2 {
   font-size: xx-large;
 }
 
@@ -57,6 +57,7 @@ html, body {
 .calculator__operations-output, .calculator__output {
   text-align: right;
   color: #eeeeee;
+  height: 50px;
 }
 .calculator__keypad {
   display: grid;

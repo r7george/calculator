@@ -23,6 +23,7 @@ html, body {
   &__operations-output, &__output {
     text-align: right;
     color: $tertiaryColor;
+    height: 50px;
   }
 
   &__keypad {
