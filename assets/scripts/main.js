@@ -11,12 +11,6 @@ let firstNumber = "";
 let operator = "";
 let secondNumber = "";
 
-// const calculator = {
-//   number1: firstNumber,
-//   operation: operator,
-//   number2:secondNumber
-// };
-
 
 // sets the firstNumber, operator, and secondNumber variable
 const setVariable = (event) => {
@@ -137,6 +131,7 @@ const calculating = (event) => {
     equals.addEventListener("click", finalEqual);
   }
 }
+
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", calculating);
