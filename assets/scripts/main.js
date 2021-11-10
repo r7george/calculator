@@ -17,17 +17,17 @@ const setVariable = (event) => {
   if (event.target.className === "calculator__keypad__number" && operator === "") {
     display.innerHTML += event.target.value;
     firstNumber += event.target.value;
-    console.log(`${firstNumber}: firstNumber`);
+    // console.log(`${firstNumber}: firstNumber`);
   }
   else if (event.target.className === "calculator__keypad__main-operator" && firstNumber != "") {
     display.innerHTML += event.target.value;
     operator = event.target.value;
-    console.log(`${operator}: operator`);
+    // console.log(`${operator}: operator`);
   }
   else if (event.target.className === "calculator__keypad__number" && firstNumber != "" && operator != "") {
     display.innerHTML += event.target.value;
     secondNumber += event.target.value;
-    console.log(`${secondNumber}: secondNumber`);
+    // console.log(`${secondNumber}: secondNumber`);
   }
 }
 
