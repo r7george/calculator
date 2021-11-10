@@ -137,15 +137,10 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", calculating);
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
+subOperatorBtns[0].addEventListener("dblclick", () => {
+  output.innerHTML = "";
+  display.innerHTML = "";
+  firstNumber = "";
+  secondNumber = "";
+  operator="";
+});

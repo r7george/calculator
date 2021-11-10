@@ -52,12 +52,19 @@ html, body {
   background-color: #222831;
   width: fit-content;
   margin: 100px auto 0 auto;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 25px;
 }
 .calculator__operations-output, .calculator__output {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: #eeeeee;
+  background-color: #393E36;
   height: 50px;
+}
+.calculator__output {
+  margin-bottom: 10px;
 }
 .calculator__keypad {
   display: grid;

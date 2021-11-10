@@ -18,12 +18,20 @@ html, body {
   background-color: $primaryColor;
   width: fit-content;
   margin: 100px auto 0 auto;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 25px;
 
   &__operations-output, &__output {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     color: $tertiaryColor;
+    background-color: $secondaryColor;
     height: 50px;
+  }
+
+  &__output {
+    margin-bottom: 10px;
   }
 
   &__keypad {
