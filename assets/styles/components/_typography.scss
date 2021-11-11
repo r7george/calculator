@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+* {
+  font-family: $primaryFont;
+  font-weight: bold;
+  font-size: 1pc;
+}
+
+.calculator__operations-output > h3 {
+  font-size: medium;
+}
+
+.calculator__output > h2 {
+  font-size: xx-large;
+}

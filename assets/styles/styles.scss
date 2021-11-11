@@ -1,0 +1,64 @@
+@import "components/_variables.scss";
+@import "components/_buttons.scss";
+@import "components/_typography.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  background-color: $primaryColor;
+  width: fit-content;
+  margin: 75px auto 0 auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 5px 5px $calShadow;
+
+  &__operations-output, &__output {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: $tertiaryColor;
+    background-color: $secondaryColor;
+    height: 50px;
+    width: 230px;
+  }
+
+  &__operations-output {
+    box-shadow: 2px 2px $numShadow inset;
+  }
+
+  &__output {
+    margin-bottom: 10px;
+    box-shadow: 2px 0px $numShadow inset;
+  }
+
+  &__operations-output > h3, &__output > h2 {
+    width: 230px;
+    height: 50px;
+    margin: 0 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 10px;
+    
+    #equals {
+      grid-column: 3/5;
+      grid-row: 5/6;
+    }
+  
+  }
+}
+
