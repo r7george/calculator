@@ -134,6 +134,7 @@ const buttonClassDetermining = (event) => {
   else if (event.target.className === "calculator__keypad__equals") {
     equals.addEventListener("click", pressingEqual);
   }
+  
 }
 
 
