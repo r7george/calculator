@@ -17,50 +17,54 @@ const setVariable = (event) => {
   if (event.target.className === "calculator__keypad__number" && operator === "") {
     display.innerHTML += event.target.value;
     firstNumber += event.target.value;
-    // console.log(`${firstNumber}: firstNumber`);
   }
-  else if (event.target.className === "calculator__keypad__main-operator" && firstNumber != "") {
+  else if (event.target.className === "calculator__keypad__main-operator" && firstNumber != "" && operator === "") {
     display.innerHTML += event.target.value;
     operator = event.target.value;
-    // console.log(`${operator}: operator`);
+  }
+  else if (event.target.className === "calculator__keypad__main-operator" && firstNumber != "" && operator != "") {
+    display.innerHTML = `${firstNumber}${event.target.value}`;
+    operator = event.target.value;
+    secondNumber = "";
   }
   else if (event.target.className === "calculator__keypad__number" && firstNumber != "" && operator != "") {
     display.innerHTML += event.target.value;
     secondNumber += event.target.value;
-    // console.log(`${secondNumber}: secondNumber`);
   }
 }
 
 
 // used for the final equal sign
-const finalEqual = () => {
-  if (operator === "/") {
-    const num = (parseFloat(firstNumber) / parseFloat(secondNumber)).toPrecision(8);
-    output.innerHTML = num;
-    firstNumber = num.toString();
-    operator = "";
-    secondNumber = "";
-  }
-  else if (operator === "*") {
-    const num = (parseFloat(firstNumber) * parseFloat(secondNumber)).toPrecision(8);
-    output.innerHTML = num;
-    firstNumber = num.toString();
-    operator = "";
-    secondNumber = "";
-  }
-  else if (operator === "+") {
-    const num = (parseFloat(firstNumber) + parseFloat(secondNumber)).toPrecision(8);
-    output.innerHTML = num;
-    firstNumber = num.toString();
-    operator = "";
-    secondNumber = "";
-  }
-  else if (operator === "-") {
-    const num = (parseFloat(firstNumber) - parseFloat(secondNumber)).toPrecision(8);
-    output.innerHTML = num;
-    firstNumber = num.toString();
-    operator = "";
-    secondNumber = "";
+const pressingEqual = () => {
+  if (secondNumber != "") {
+    if (operator === "/") {
+      const num = (parseFloat(firstNumber) / parseFloat(secondNumber)).toPrecision(6);
+      output.innerHTML = num;
+      firstNumber = num.toString();
+      operator = "";
+      secondNumber = "";
+    }
+    else if (operator === "*") {
+      const num = (parseFloat(firstNumber) * parseFloat(secondNumber)).toPrecision(6);
+      output.innerHTML = num;
+      firstNumber = num.toString();
+      operator = "";
+      secondNumber = "";
+    }
+    else if (operator === "+") {
+      const num = (parseFloat(firstNumber) + parseFloat(secondNumber)).toPrecision(6);
+      output.innerHTML = num;
+      firstNumber = num.toString();
+      operator = "";
+      secondNumber = "";
+    }
+    else if (operator === "-") {
+      const num = (parseFloat(firstNumber) - parseFloat(secondNumber)).toPrecision(6);
+      output.innerHTML = num;
+      firstNumber = num.toString();
+      operator = "";
+      secondNumber = "";
+    }
   }
 }
 
@@ -107,7 +111,7 @@ const subOperators = (event) => {
 
 
 // used to set off the flow based on what type of button is pressed
-const calculating = (event) => {
+const buttonClassDetermining = (event) => {
 
   if (event.target.className === "calculator__keypad__number") {
     numberBtns.forEach((number) => {
@@ -128,13 +132,13 @@ const calculating = (event) => {
   }
 
   else if (event.target.className === "calculator__keypad__equals") {
-    equals.addEventListener("click", finalEqual);
+    equals.addEventListener("click", pressingEqual);
   }
 }
 
 
 buttons.forEach((btn) => {
-  btn.addEventListener("click", calculating);
+  btn.addEventListener("click", buttonClassDetermining);
 });
 
 subOperatorBtns[0].addEventListener("dblclick", () => {

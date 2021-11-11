@@ -3,16 +3,19 @@
 button {
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .calculator__keypad__sub-operator {
   background-color: $quinaryColor;
   color: $primaryColor;
+  box-shadow: 2px 2px $subShadow;
 }
 
 .calculator__keypad__main-operator, .calculator__keypad__equals {
   background-color: $quaternaryColor;
   color: $tertiaryColor;
+  box-shadow: 2px 2px $mainShadow;
 }
 
 #equals {
@@ -22,4 +25,5 @@ button {
 .calculator__keypad__number {
   background-color: $secondaryColor;
   color: $tertiaryColor;
+  box-shadow: 2px 2px $numShadow;
 }

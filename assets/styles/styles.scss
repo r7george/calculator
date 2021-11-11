@@ -8,30 +8,44 @@
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 .calculator {
   display: flex;
   flex-direction: column;
   background-color: $primaryColor;
   width: fit-content;
-  margin: 100px auto 0 auto;
+  margin: 75px auto 0 auto;
   padding: 30px;
   border-radius: 25px;
+  box-shadow: 5px 5px $calShadow;
 
   &__operations-output, &__output {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     color: $tertiaryColor;
     background-color: $secondaryColor;
     height: 50px;
+    width: 230px;
+  }
+
+  &__operations-output {
+    box-shadow: 2px 2px $numShadow inset;
   }
 
   &__output {
     margin-bottom: 10px;
+    box-shadow: 2px 0px $numShadow inset;
+  }
+
+  &__operations-output > h3, &__output > h2 {
+    width: 230px;
+    height: 50px;
+    margin: 0 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   &__keypad {

@@ -1,16 +1,19 @@
 button {
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .calculator__keypad__sub-operator {
   background-color: #707681;
   color: #222831;
+  box-shadow: 2px 2px #494F59;
 }
 
 .calculator__keypad__main-operator, .calculator__keypad__equals {
   background-color: #00ADB5;
   color: #eeeeee;
+  box-shadow: 2px 2px #00929A;
 }
 
 #equals {
@@ -20,10 +23,11 @@ button {
 .calculator__keypad__number {
   background-color: #393E36;
   color: #eeeeee;
+  box-shadow: 2px 2px #171C15;
 }
 
 * {
-  font-family: "Merriweather", serif;
+  font-family: "Rubik", sans-serif;
   font-weight: bold;
   font-size: 1pc;
 }
@@ -42,29 +46,41 @@ button {
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
-
 .calculator {
   display: flex;
   flex-direction: column;
   background-color: #222831;
   width: fit-content;
-  margin: 100px auto 0 auto;
+  margin: 75px auto 0 auto;
   padding: 30px;
   border-radius: 25px;
+  box-shadow: 5px 5px #14181f;
 }
 .calculator__operations-output, .calculator__output {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: #eeeeee;
   background-color: #393E36;
   height: 50px;
+  width: 230px;
+}
+.calculator__operations-output {
+  box-shadow: 2px 2px #171C15 inset;
 }
 .calculator__output {
   margin-bottom: 10px;
+  box-shadow: 2px 0px #171C15 inset;
+}
+.calculator__operations-output > h3, .calculator__output > h2 {
+  width: 230px;
+  height: 50px;
+  margin: 0 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .calculator__keypad {
   display: grid;
