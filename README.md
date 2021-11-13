@@ -39,7 +39,7 @@ Functions and what they do:
 
 
 ## Future implementation
-The next natural step from here would have been to implement more functions found in a scientific calculator. Given more time, this is something I definitely would've liked to undertake.
+The next natural step from here would have been to implement more functions found in a scientific calculator given more time.
 
 
 <!-- ## Here are some bugs I found & fixed
