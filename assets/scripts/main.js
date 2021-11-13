@@ -35,7 +35,7 @@ const setVariable = (event) => {
 
 
 // used for the final equal sign
-const pressingEqual = () => {
+const clickingEqual = () => {
   if (secondNumber != "") {
     if (operator === "/") {
       const num = (parseFloat(firstNumber) / parseFloat(secondNumber)).toPrecision(6);
@@ -132,7 +132,7 @@ const buttonClassDetermining = (event) => {
   }
 
   else if (event.target.className === "calculator__keypad__equals") {
-    equals.addEventListener("click", pressingEqual);
+    equals.addEventListener("click", clickingEqual);
   }
   
 }
