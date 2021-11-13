@@ -26,6 +26,22 @@ button {
   box-shadow: 2px 2px #171C15;
 }
 
+.calculator__keypad__sub-operator:hover, .calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover, .calculator__keypad__number:hover {
+  background-color: #eeeeee;
+}
+
+.calculator__keypad__sub-operator:hover {
+  color: #707681;
+}
+
+.calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover {
+  color: #00ADB5;
+}
+
+.calculator__keypad__number:hover {
+  color: #393E36;
+}
+
 * {
   font-family: "Rubik", sans-serif;
   font-weight: bold;

@@ -27,3 +27,19 @@ button {
   color: $tertiaryColor;
   box-shadow: 2px 2px $numShadow;
 }
+
+.calculator__keypad__sub-operator:hover, .calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover, .calculator__keypad__number:hover {
+  background-color: $tertiaryColor;
+}
+
+.calculator__keypad__sub-operator:hover {
+  color: $quinaryColor;
+}
+
+.calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover {
+  color: $quaternaryColor;
+}
+
+.calculator__keypad__number:hover {
+  color: $secondaryColor;
+}
