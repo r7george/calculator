@@ -35,7 +35,7 @@ Functions and what they do:
   - className = `.calculator__keypad__sub-operator` => `subOperators()`
   - className = `.calculator__keypad__main-operator` => `setVariable()`
   - className = `.calculator__keypad__equals` => `pressingEqual()`
-    *(className comes from the buttons on the HTML document)*
+  *(className comes from the buttons on the HTML document)*
 
 
 ## Future implementation
