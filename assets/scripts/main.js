@@ -15,8 +15,17 @@ let secondNumber = "";
 // sets the firstNumber, operator, and secondNumber variable
 const setVariable = (event) => {
   if (event.target.className === "calculator__keypad__number" && operator === "") {
-    display.innerHTML += event.target.value;
-    firstNumber += event.target.value;
+    console.log(event.target.value == "." && !firstNumber.includes("."))
+    if(event.target.value == "."){
+      if (!firstNumber.includes(".")) {
+        display.innerHTML += event.target.value;
+        firstNumber += event.target.value;
+      }
+    }
+    else {
+      display.innerHTML += event.target.value;
+      firstNumber += event.target.value;
+    }
   }
   else if (event.target.className === "calculator__keypad__main-operator" && firstNumber != "" && operator === "") {
     display.innerHTML += event.target.value;
@@ -28,8 +37,17 @@ const setVariable = (event) => {
     secondNumber = "";
   }
   else if (event.target.className === "calculator__keypad__number" && firstNumber != "" && operator != "") {
-    display.innerHTML += event.target.value;
-    secondNumber += event.target.value;
+    if(event.target.value == "."){
+      if (!secondNumber.includes(".")) {
+        display.innerHTML += event.target.value;
+        secondNumber += event.target.value;
+      }
+    }
+    else {
+      display.innerHTML += event.target.value;
+      secondNumber += event.target.value;
+    }
+    
   }
 }
 
