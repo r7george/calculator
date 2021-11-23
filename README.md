@@ -41,6 +41,9 @@ Functions and what they do:
 ## Future implementation
 The next natural step from here would have been to implement more functions found in a scientific calculator given more time.
 
+## Bugs
+The main known bug is that when the calculator is first loaded, you're required to double click on the functions and some numbers in order to get them to work. However as soon as the first operation has been completed, this problem seems to disappear.
+
 
 <!-- ## Here are some bugs I found & fixed
 - Numbers stretched the screen: used CCS property `"overflow:hidden"` & setting a width
