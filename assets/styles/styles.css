@@ -4,13 +4,13 @@ button {
   cursor: pointer;
 }
 
-.calculator__keypad__sub-operator {
+.calculator__sub-operator {
   background-color: #707681;
   color: #222831;
   box-shadow: 2px 2px #494F59;
 }
 
-.calculator__keypad__main-operator, .calculator__keypad__equals {
+.calculator__main-operator, .calculator__equals {
   background-color: #00ADB5;
   color: #eeeeee;
   box-shadow: 2px 2px #00929A;
@@ -20,25 +20,25 @@ button {
   border-radius: 25px;
 }
 
-.calculator__keypad__number {
+.calculator__number {
   background-color: #393E36;
   color: #eeeeee;
   box-shadow: 2px 2px #171C15;
 }
 
-.calculator__keypad__sub-operator:hover, .calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover, .calculator__keypad__number:hover {
+.calculator__sub-operator:hover, .calculator__main-operator:hover, .calculator__equals:hover, .calculator__number:hover {
   background-color: #eeeeee;
 }
 
-.calculator__keypad__sub-operator:hover {
+.calculator__sub-operator:hover {
   color: #707681;
 }
 
-.calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover {
+.calculator__main-operator:hover, .calculator__equals:hover {
   color: #00ADB5;
 }
 
-.calculator__keypad__number:hover {
+.calculator__number:hover {
   color: #393E36;
 }
 
