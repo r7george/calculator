@@ -49,16 +49,16 @@
   }
 
   &__keypad {
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(5, 50px);
-    grid-gap: 10px;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  grid-gap: 10px;
+  
     #equals {
       grid-column: 3/5;
       grid-row: 5/6;
     }
-  
-  }
-}
 
+  }
+
+}

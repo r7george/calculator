@@ -6,13 +6,13 @@ button {
   cursor: pointer;
 }
 
-.calculator__keypad__sub-operator {
+.calculator__sub-operator {
   background-color: $quinaryColor;
   color: $primaryColor;
   box-shadow: 2px 2px $subShadow;
 }
 
-.calculator__keypad__main-operator, .calculator__keypad__equals {
+.calculator__main-operator, .calculator__equals {
   background-color: $quaternaryColor;
   color: $tertiaryColor;
   box-shadow: 2px 2px $mainShadow;
@@ -22,24 +22,24 @@ button {
   border-radius: 25px;
 }
 
-.calculator__keypad__number {
+.calculator__number {
   background-color: $secondaryColor;
   color: $tertiaryColor;
   box-shadow: 2px 2px $numShadow;
 }
 
-.calculator__keypad__sub-operator:hover, .calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover, .calculator__keypad__number:hover {
+.calculator__sub-operator:hover, .calculator__main-operator:hover, .calculator__equals:hover, .calculator__number:hover {
   background-color: $tertiaryColor;
 }
 
-.calculator__keypad__sub-operator:hover {
+.calculator__sub-operator:hover {
   color: $quinaryColor;
 }
 
-.calculator__keypad__main-operator:hover, .calculator__keypad__equals:hover {
+.calculator__main-operator:hover, .calculator__equals:hover {
   color: $quaternaryColor;
 }
 
-.calculator__keypad__number:hover {
+.calculator__number:hover {
   color: $secondaryColor;
 }
