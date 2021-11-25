@@ -15,7 +15,7 @@ I used a similar layout to the Apple phone calculator but modified the colour sc
 
 The basis of how my calculator works is by attaching event listeners to each button within the keypad based on their class. I'll give a brief description of the global variables used, pure functions and *handle* functions I use below.
 
-### Global Variable
+### Global Variables
 - `firstNumber`: this is the first number processed within the calculator but stored as a string so it can be concatenated for larger numbers and for the calculator display.
 - `operator`: this is the main operator that dictates the function the calculator performs, stored as a string too for similar purposes as `firstNumber`.
 - `secondNumber`: this is the second (and final) number processed within the calculator, stored as a string for similar purposes as above.
