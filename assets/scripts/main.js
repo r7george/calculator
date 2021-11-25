@@ -66,6 +66,7 @@ const handleSubClick = (event) => {
   // for AC
   if (getId(event) == "ac") {
     display.innerHTML = "";
+    firstNumber = resetVariable(firstNumber);
     secondNumber = resetVariable(secondNumber);
     operator = resetVariable(operator);
   }
@@ -95,16 +96,6 @@ const handleSubClick = (event) => {
       secondNumber = num;
     }
   }
-}
-
-
-// function for the AC button DblClick event
-const handleAcDblClick = () => {
-  output.innerHTML = "";
-  display.innerHTML = "";
-  firstNumber = resetVariable(firstNumber);
-  secondNumber = resetVariable(secondNumber);
-  operator = resetVariable(operator);
 }
 
 
@@ -144,7 +135,5 @@ mainOperatorBtns.forEach((button) => {
 subOperatorBtns.forEach((button) => {
   button.addEventListener("click", handleSubClick);
 });
-
-document.querySelector("#ac").addEventListener("dblclick", handleAcDblClick);
 
 equals.addEventListener("click", handleEqualClick);

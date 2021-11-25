@@ -11,32 +11,25 @@ HTML, CSS, SCSS, JavaScript
 ### Design Inspiration
 I used a similar layout to the Apple phone calculator but modified the colour scheme based on a different colour palette. The main aim of the task was to focus on a functional calculator, hence the design aspect of the calculator didn't take precident.
 
-
 ## How it works
 
-The basis of how my calculator works is by attaching an event listener to every button, regardless of class, calling the function known as `buttonClassDetermining()` when any button is clicked.
+The basis of how my calculator works is by attaching event listeners to each button within the keypad based on their class. I'll give a brief description of the global variables used, pure functions and *handle* functions I use below.
 
-This class is used to determine the class of the button that's been clicked, and based on whether it's `.calculator__keypad__number`, `.calculator__keypad__sub-operator`, `.calculator__keypad__main-operator` or `.calculator__keypad__equals`, it'll call the relevant function (displayed below).
+### Global Variable
+- `firstNumber`: this is the first number processed within the calculator but stored as a string so it can be concatenated for larger numbers and for the calculator display.
+- `operator`: this is the main operator that dictates the function the calculator performs, stored as a string too for similar purposes as `firstNumber`.
+- `secondNumber`: this is the second (and final) number processed within the calculator, stored as a string for similar purposes as above.
 
-### Basic structure within the code
+### Pure (helper) Functions
+- `getValue()`: used to get the value of DOM element passed
+- `getId()`: used to get the value of DOM element passed
+- `resetVariable()`: used to reset whichever variable passed
 
-Variables:
-- `firstNumber`: first number entered into the calculator
-- `secondNumber`: second number entered into the calculator after the operator
-- `operator`: either add, subtract, times and divide
-
-
-Functions and what they do:
-- `setVariable()`: called within `buttonClassDetermining()` and sets variables `firstNumber`, `secondNumber` and `operator` based on if/else-if statements using the className of the button clicked and combinations of the content of the variables as the conditions
-- `subOperators()`: called by any sub-operator button to carry out the desired function
-- `clickingEqual()`: called by the event listener within the equals button to determine what action to carry out based on the operator selected by `setVariable()`
-- `buttonClassDetermining()`: called by any button clicked, and based on the class of the button, one of the above functions is called as such:
-  - className = `.calculator__keypad__number` => `setVariable()`
-  - className = `.calculator__keypad__sub-operator` => `subOperators()`
-  - className = `.calculator__keypad__main-operator` => `setVariable()`
-  - className = `.calculator__keypad__equals` => `pressingEqual()`
-  *(className comes from the buttons on the HTML document)*
-
+### Handle Functions
+- `handleNumClick()`: used by the event listeners attached to the number buttons to set the `firstNumber` and `secondNumber` variables, update the display's innerHTML, and concatenate the numbers on the display
+- `handleMainClick()`: used by the event listeners attached to the main operator buttons to set the `operator` variable and update the display's innerHTML
+- `handleSubClick()`: used by the event listeners attached to the sub operator buttons to carry out the required function based on the button (AC, +/- or %)
+- `handleEqualClick()`: used by the event listener attached to the equal button to carry out the calculator operation based on the operator and update the output's innerHTML
 
 ## Future implementation
 The next natural step from here would have been to implement more functions found in a scientific calculator given more time.
